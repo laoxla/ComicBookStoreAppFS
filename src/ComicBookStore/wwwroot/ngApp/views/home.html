@@ -1,0 +1,22 @@
+
+<div class="flex-row flex-space-between flex-stretch">
+    <div class="arrow flex-col flex-center" ng-click="controller.moveLeft()">
+       <span class="stroll"> &lt; </span> 
+    </div>
+
+    <div class="comic" ng-repeat="comic in controller.comics | limitTo:4:controller.start" ui-sref="">
+        <img ng-src="{{comic.imageUrl}}" />
+        <div class="flex-row flex-space-between">
+            <div >
+               <strong>{{comic.title}}</strong>
+            </div>
+            <div>
+                <strong>{{comic.price}}</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="arrow flex-col flex-center" ng-click="controller.moveRight()">
+       <span class="stroll"> &gt;</span>
+    </div>
+</div>
