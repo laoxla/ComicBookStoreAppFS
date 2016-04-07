@@ -1,8 +1,14 @@
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    margin:0;
+    padding:0;
     background-color: gold;
     height:100%;
+}
+#wrapper{
+    min-height:100%;
+    position:relative;
 }
 
 /* Wrapping element */
@@ -78,13 +84,21 @@ h1{
 header{
     text-align:center;
     margin:auto;
-    padding-bottom: 10px;
+    padding: 10px;
 }
+
+
 footer{
     text-align:center;
     margin:auto;
     background-color:coral;
     margin-bottom:0px;
+
+   position:absolute;
+   bottom:0;
+   width:100%;
+  
+  
 }
 
 /*Home Page*/
